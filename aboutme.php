@@ -3,7 +3,7 @@
 ?>
         <div id="cont">
             <section id="aboutme">
-                <h2 class="sr-only">홍길동의 역량</h2>
+                <h2 class="sr-only">송도연의 역량</h2>
 
                 <article class="visual">
                     <div>
