@@ -1,0 +1,379 @@
+@charset "utf-8";
+
+#graphic{
+    width: 1100px;
+    margin: 0 auto;
+} 
+
+/* visual */
+#graphic .visual{
+    position: relative; /* 기준점 */
+    width: 1100px;
+    height: 600px;
+    margin: 0;
+    background-image: url(../images/graphics/graphics_visual_bg.png);
+}
+#graphic .visual>.visual-container{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 540px;
+    height: 600px;
+}
+#graphic .visual>.visual-container>.visual-main{
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    width: 500px;
+    height: 350px;
+    text-indent: -9999px;
+    background-image: url(../images/graphics/graphics_lst_big_1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border: 3px solid #f96e39;
+    box-sizing: border-box;
+}
+#graphic .visual>.visual-container>.visual-slides{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: absolute;
+    top: 390px;
+    left: 20px;
+    width: 500px;
+}
+#graphic .visual>.visual-container>.visual-slides>li{
+    margin-bottom: 20px;
+}
+#graphic .visual>.visual-container>.visual-slides>li>a{
+    display: block;
+}
+#graphic .visual>.visual-container>.visual-slides>li>a>img{
+    display: block;
+    width: 110px;
+    border: 3px solid #877857;
+    box-sizing: border-box;
+}
+#graphic .visual>.visual-container>.visual-slides>li.on>a>img,
+#graphic .visual>.visual-container>.visual-slides>li:hover>a>img{
+    border: 3px solid #f96e39;
+}
+
+/* intro */
+#graphic .msg{
+    width: 1100px;
+}
+#graphic .msg>.msg-container{
+    position: relative;
+    height: 320px;
+    background-image: url(../images/common/section_intro_Bg.png);
+}
+#graphic .msg>.msg-container>strong{
+    display: block;
+    width: 1100px;
+    height: 40px;
+    padding: 40px 0;
+    color: #666;
+    line-height: 40px;
+    font-size: 30px;
+    text-align: center;
+}
+#graphic .msg>.msg-container>p{
+    width: 600px;
+    margin: 0 auto 30px;
+    line-height: 1.5;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+#graphic .works{
+    margin-top: 50px;
+}
+
+#graphic .works>div{
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid #000; */
+}
+
+#graphic .works>div>h3{
+    width: 180px;
+    font-size: 23px;
+    line-height: 1.6;
+}
+
+#graphic .works>div>h3:before{
+    display: block;
+    width: 90px;
+    height: 3px;
+    background-color: #222;
+    content: '';
+}
+
+#graphic .works>div>ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 840px;
+}
+
+#graphic .works>div>ul>li:nth-child(1){background-image: url(../images/graphics/graphics_lst_thmb_1.png);}
+#graphic .works>div>ul>li:nth-child(2){background-image: url(../images/graphics/graphics_lst_thmb_2.png);}
+#graphic .works>div>ul>li:nth-child(3){background-image: url(../images/graphics/graphics_lst_thmb_3.png);}
+
+#graphic .works>div>ul>li:nth-child(4){background-image: url(../images/graphics/graphics_lst_thmb_4.png);}
+#graphic .works>div>ul>li:nth-child(5){background-image: url(../images/graphics/graphics_lst_thmb_5.png);}
+#graphic .works>div>ul>li:nth-child(6){background-image: url(../images/graphics/graphics_lst_thmb_6.png);}
+#graphic .works>div>ul>li:nth-child(7){background-image: url(../images/graphics/graphics_lst_thmb_7.png);}
+#graphic .works>div>ul>li:nth-child(8){background-image: url(../images/graphics/graphics_lst_thmb_8.png);}
+#graphic .works>div>ul>li:nth-child(9){background-image: url(../images/graphics/graphics_lst_thmb_9.png);}
+
+#graphic .works>div>ul>li{
+    position: relative;
+    width: 240px;
+    margin-bottom: 170px;
+    background-repeat: no-repeat;
+}
+#graphic .works>div>ul>li:nth-of-type(8){
+    right: 300px;
+}
+
+#graphic .works>div>ul>li>a{
+    display: block;
+    height: 180px;
+    font-size: 16px;
+    transition: all 0.2s;
+    border-top: 1px solid transparent;
+    box-sizing: border-box;
+}
+
+#graphic .works>div>ul>li:hover>a{
+    background-color: rgba(0,0,0,0.5);
+}
+
+#graphic .works>div>ul>li:hover>a:before,
+#graphic .works>div>ul>li:hover>a:after{
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 16px;
+    height: 4px;
+    margin: -2px 0 0 -8px;
+    background-color: #fff;
+    content: '';
+}
+
+#graphic .works>div>ul>li:hover>a:after{
+    transform: rotate(90deg);
+}
+
+#graphic .works>div>ul>li>a>.category{
+    display: none;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    color: #ebd728;
+    font-weight: 600;
+}
+
+#graphic .works>div>ul>li:hover>a>.category{display: block;}
+
+#graphic .works>div>ul>li>a>h4{
+    margin-top: 220px;
+}
+#graphic .works>div>ul>li>a>p{
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+
+/* 디자인작품보기 라이트박스 */
+#graphic .shadow{
+    display: none;
+    overflow-y: scroll;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(94, 110, 141, 0.5);
+    z-index: 2000;
+}
+
+#graphic .shadow>.detail{
+    position: relative;
+    width: 960px;
+    margin: 130px auto;
+    padding-top: 50px;
+    background-color: #fff;
+    border-bottom: 1px solid transparent;
+    box-sizing: border-box;
+}
+
+#graphic .shadow>.detail>h5{
+    margin-left: 80px;
+    font-size: 26px;
+}
+
+#graphic .shadow>.detail>ol{
+    display: flex;
+    justify-content: space-between;
+    width: 45px;
+    margin: 40px 0 0 80px;
+}
+
+#graphic li:nth-of-type(1)>.shadow>.detail>ol,
+#graphic li:nth-of-type(2)>.shadow>.detail>ol,
+#graphic li:nth-of-type(3)>.shadow>.detail>ol{
+    width: 70px;
+}
+
+#graphic .shadow>.detail>ol>li{
+    width: 20px;
+    height: 20px;
+    text-indent: -9999px;
+    background-size: cover;
+}
+
+#graphic .shadow>.detail>ol>li.psd{background-image: url(../images/graphics/graphics_ico_psd.png);}
+
+#graphic .shadow>.detail>ol>li.ai{background-image: url(../images/graphics/graphics_ico_ai.png);}
+
+#graphic .shadow>.detail>ol>li.xd{background-image: url(../images/graphics/graphics_ico_xd.png);}
+
+#graphic .shadow>.detail>.sumup:before{
+    display: block;
+    width: 800px;
+    margin: 30px auto 50px;
+    border-bottom: 1px solid #aaa;
+    content: '';
+}
+
+#graphic .shadow>.detail>.sumup{
+    width: 800px;
+    margin: 0 auto 70px;
+    /* background-color: #ff0; */
+}
+
+#graphic .shadow>.detail>.sumup>address,
+#graphic .shadow>.detail>.sumup>p{text-align: center;}
+
+#graphic .shadow>.detail>.sumup>p>a{
+    display: block;
+    position: absolute;
+    right: 80px;
+    top: 115px;
+    width: 100px;
+    height: 28px;
+    color: #fff;
+    line-height: 28px;
+    text-align: center;
+    background-color: #222;
+    transition: all 0.1s;
+}
+
+#graphic .shadow>.detail>.sumup>p>a:hover{
+    color: #222;
+    background-color: #fff;
+    border: 1px solid #222;
+    box-sizing: border-box;
+}
+
+#graphic .shadow>.detail>.sumup>p>img{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+/* 작품 설명 */
+#graphic .explain{
+    margin-top: 45px;
+    padding: 40px 30px;
+    background-color: #eee;
+}
+
+#graphic .explain>h6{
+    font-size: 22px;
+}
+
+#graphic .explain>h6:after{
+    display: block;
+    width: 750px;
+    margin: 25px 0;
+    border-bottom: 1px solid #aaa;
+    content: '';
+}
+
+#graphic .explain>dl{}
+
+#graphic .explain>dl>dt{
+    margin-bottom: 5px;
+    color: #ea5f62;
+    font-size: 14px;
+}
+
+#graphic .explain>dl>dd{
+    margin-bottom: 40px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+#graphic .explain>dl>dd>span{display: block;}
+
+#graphic .explain>dl>dd>.use_color{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    text-indent: -9999px;
+}
+
+/* 닫기 버튼 */
+#graphic .clse{
+    display: block;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    width: 30px;
+    height: 30px;
+    text-indent: -9999px;
+    border: none;
+    outline: none;
+}
+
+/* X 만들기 */
+
+#graphic .clse:before,
+#graphic .clse:after{
+    display: block;
+    position: absolute;
+    top: 14px;
+    width: 14px;
+    height: 3px;
+    background-color: #ccc;
+    content: '';
+}
+#graphic .clse:before{
+    left: 8px;
+    transform: rotate(45deg);
+}
+#graphic .clse:after{
+    right: 8px;
+    transform: rotate(-45deg);
+}
+
+/* 아래쪽 닫기버튼 */
+#graphic .clse_bottom{
+    top: initial;
+    bottom: 8px;
+}
+#graphic .clse_bottom:before,
+#graphic .clse_bottom:after{
+    top: initial;
+    bottom: 12px;
+}
